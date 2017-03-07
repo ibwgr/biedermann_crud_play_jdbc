@@ -1,0 +1,7 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET     /products/                           controllers.Products.list
+PUT     /products/new                        controllers.Products.newProduct
+GET     /products/:ean                       controllers.Products.details(ean: String)
+POST    /products/                           controllers.Products.save
